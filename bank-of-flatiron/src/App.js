@@ -1,21 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Form from './components/Form.js';
-import Table from './components/Table.js';
-import SearchBar from './components/SearchBar.js';
+import React, { useState } from "react";
+import "./App.css";
+import Form from "./components/Form";
+import Table from "./components/Table";
+import SearchBar from "./components/SearchBar";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>The Royal Bank of Flatiron</p>
-      </header>
-      <SearchBar />
-      <Form />
-      <Table />
-    </div>
-  );
+    const [payments, setPayments] = useState([]);
+    const [searchWord, setSearchWord] = useState("");
+
+    const addPayment = (formContent) => {
+        setPayments([...payments, formContent]);
+    };
+
+    const filteredPayments = payments.filter((payment) =>
+        payment.description.toLowerCase().includes(searchWord.toLowerCase())
+    );
+
+    return (
+        <div className="App">
+            <header>
+                <h1>The Royal Bank of Flatiron</h1>
+            </header>
+            <SearchBar onChange={setSearchWord} />
+            <Form onSubmit={addPayment} />
+            <Table payments={filteredPayments} />
+        </div>
+    );
 }
 
 export default App;

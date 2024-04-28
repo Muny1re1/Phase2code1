@@ -1,13 +1,20 @@
 import React from "react";
+import Table from './Table.js';
 
-function Button (){
-    const button = <button className="button" onClick={submit}>Add Transaction.</button>;
+function Button(props) {
+    function submit() {
+        const objects = props.updatedFormContents;
+        console.log(objects);
+    }
+
     return (
-        button
-    )
+        <>
+            <button className="button" onClick={submit}>Add Transaction</button>
+            {props.updatedFormContents.map((object, index) => (
+                <Table key={index} {...object} />
+            ))}
+        </>
+    );
 }
 
-function submit(){
-}
-
-export default Button;
+export default Button

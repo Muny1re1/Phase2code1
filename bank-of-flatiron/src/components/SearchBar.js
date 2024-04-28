@@ -1,10 +1,14 @@
 import React from "react";
 
-function SearchBar() {
+function SearchBar({ onChange }) {
     return (
-        <form className="search-bar">
-              <input type="text" name="search" placeholder="Search..."/>
-        </form>
-    )
+        <input
+        className="search-bar"
+            type="text"
+            placeholder="Search by description"
+            onChange={(e) => onChange(e.target.value)}
+        />
+    );
 }
+
 export default SearchBar;
