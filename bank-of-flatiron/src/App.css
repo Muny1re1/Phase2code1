@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -47,4 +48,16 @@ border-radius: 10px;
   cursor: pointer;
 background-color: #616060;
 border-radius: 10px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th{
+  border-style: solid;
+  border-width: 1px;
+}
+.table td{
+  border-style: solid;
+  border-width: 1px;
 }

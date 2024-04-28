@@ -8,7 +8,6 @@ function Button (){
 }
 
 function submit(){
-    alert("Submitted!")
 }
 
 export default Button;
