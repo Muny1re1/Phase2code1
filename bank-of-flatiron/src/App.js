@@ -1,3 +1,4 @@
+//importing all the necessary components and hooks.
 import React, { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
@@ -5,10 +6,10 @@ import Table from "./components/Table";
 import SearchBar from "./components/SearchBar";
 
 
+
 function App() {
     const [payments, setPayments] = useState([]);
     const [searchWord, setSearchWord] = useState("");
-
     const addPayment = (formContent) => {
         setPayments([...payments, formContent]);
     };

@@ -23,6 +23,7 @@ function Form({ onSubmit }) {
             amount: ""
         });
     };
+    console.log(formContent);
 
     return (
         <form className="form" onSubmit={handleSubmit}>
