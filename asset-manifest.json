@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Muny1re1/Phase2code1/static/css/main.5f5e7564.css",
+    "main.js": "/Muny1re1/Phase2code1/static/js/main.53567c31.js",
+    "static/js/453.d3943c81.chunk.js": "/Muny1re1/Phase2code1/static/js/453.d3943c81.chunk.js",
+    "index.html": "/Muny1re1/Phase2code1/index.html",
+    "main.5f5e7564.css.map": "/Muny1re1/Phase2code1/static/css/main.5f5e7564.css.map",
+    "main.53567c31.js.map": "/Muny1re1/Phase2code1/static/js/main.53567c31.js.map",
+    "453.d3943c81.chunk.js.map": "/Muny1re1/Phase2code1/static/js/453.d3943c81.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f5e7564.css",
+    "static/js/main.53567c31.js"
+  ]
+}
